@@ -5,9 +5,9 @@ public class PSVMDemo {
 
     int i = 10;
 
-    public static String show(int i) {
-        System.out.println("in show method" + i);
-        return "welcome";
+    public  String show(int i) {
+       System.out.println("in show method" + i);
+       return "new Datatypes()";
     }
 
     public static void main(int[] args) {
@@ -27,7 +27,10 @@ public class PSVMDemo {
 
         PSVMDemo obj = new PSVMDemo();
 
+//        String str = obj.show(2);
+//        System.out.println(str);
         System.out.println(args[0]);
+        System.out.println(args[1]);
 //         System.out.println(obj.i);
 //         show(3);
 
