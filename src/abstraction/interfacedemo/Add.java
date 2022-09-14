@@ -1,4 +1,4 @@
-package abstraction;
+package abstraction.interfacedemo;
 
 public interface Add {
 
@@ -10,3 +10,4 @@ public interface Add {
 //functional interface - 1 method
 //normal interface - more than 1 method
 //marker interface - no method
+
