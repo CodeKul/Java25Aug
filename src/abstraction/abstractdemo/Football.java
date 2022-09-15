@@ -25,3 +25,17 @@ class Cricket extends Football{
         System.out.println("in show");
     }
 }
+
+/**
+ *       abstract class                                          interface
+ *
+ * 1. we declare abstract class using abstract keyword          we use interface
+ *
+ * 2. we abstract + non abstract method in abstract class       only abstract
+ *
+ * 3. private,protected,default,public variable                 public abstract by default
+ *
+ * 4.we can extends another class to abstract class             we can extends another interface
+ *
+ * 5.partial abstraction                                        100% abstraction
+ */
