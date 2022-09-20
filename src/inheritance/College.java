@@ -26,6 +26,9 @@ class Student extends College{ //child class , sub class, derived class
 
 class Teachers extends Student{
 
+    public void c(){
+
+    }
     public static void main(String[] args) {
         College college = new College();
         college.id = 1;
