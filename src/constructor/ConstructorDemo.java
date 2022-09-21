@@ -8,7 +8,7 @@ package constructor;
  *          2. there is no return type to constructor
  *          3. we can not declare Constructor as abstract,final,static, synchronized
  *
- * types -> 1.default
+ * types -> 1. default
  *          2. parameter Constructor
  *
  * use -> it initialise variables to their default values
@@ -20,8 +20,14 @@ public class ConstructorDemo {
         System.out.println("In Constructor");
     }
 
+    public ConstructorDemo(int i){
+        System.out.println("In Parameter const "+ i);
+    }
+
     public static void main(String[] args) {
         ConstructorDemo obj = new ConstructorDemo();
+
+        ConstructorDemo obj1 = new ConstructorDemo(2);
 
     }
 }
