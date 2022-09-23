@@ -33,7 +33,6 @@ class Sample extends SuperKeyword{
     }
 
     public Sample(int i){
-
         System.out.println("In sample parameter");
     }
 
@@ -43,7 +42,7 @@ class Sample extends SuperKeyword{
     }
     public static void main(String[] args) {
 
-        Sample obj = new Sample(4);
+        Sample obj = new Sample();
 
 //        obj.display();
     }
