@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class GuessNumber {
     public static void main(String[] args) {
 
+        System.out.println("In main");
+
         int num = (int) (Math.random()*100)+1;
         int guessNumber = 0;
         Scanner scanner = new Scanner(System.in);
@@ -21,4 +23,7 @@ public class GuessNumber {
             }
         }while (num != guessNumber);
     }
+
+
+
 }
