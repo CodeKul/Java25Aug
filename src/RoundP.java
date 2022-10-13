@@ -2,7 +2,7 @@ public class RoundP {
     public static void main(String[] args) {
 
 
-        double i = 315;
+        double i = 315.04;
 
         double div = i % 100;
         if (div <= 25) {
@@ -15,7 +15,6 @@ public class RoundP {
             System.out.println(cl(i));
         }
     }
-
     private static double fl(double i) {
         return 50 * (Math.floor(Math.abs(i / 50)));
     }
