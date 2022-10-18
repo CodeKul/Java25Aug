@@ -1,17 +1,17 @@
 package filehandling;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class FileWriterDemo {
 
     public static void main(String[] args) {
         FileWriter fileWriter = null;
+        BufferedWriter bufferedWriter = null;
         try {
 
             fileWriter = new FileWriter("src/filehandling/sample.txt");
-            fileWriter.write("India is my country");
+            bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write("India is my country");
             System.out.println("file write successfully");
 
         } catch (IOException e) {
@@ -19,23 +19,27 @@ public class FileWriterDemo {
         } finally {
             try {
                 fileWriter.close();
+                bufferedWriter.close();
             } catch (IOException e) {
                 System.out.println(e);
             }
         }
 
         FileReader fileReader = null;
+        BufferedReader bufferedReader = null;
         try {
             fileReader = new FileReader("src/filehandling/sample.txt");
-            for(int i = fileReader.read();i>= 0;){
+            bufferedReader = new BufferedReader(fileReader);
+            for(int i = bufferedReader.read();i>= 0;){
                 System.out.print((char)i);
-                i = fileReader.read();
+                i = bufferedReader.read();
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         } finally {
             try {
                 fileReader.close();
+                bufferedReader.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
