@@ -2,7 +2,7 @@ package multithreading;
 
 public class MultithreadingDemo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 //        System.out.println(Thread.currentThread().getName());
 
@@ -18,6 +18,8 @@ public class MultithreadingDemo {
         });
         t1.start();
 
+        t1.join();
+
         Thread t2 = new Thread(() -> {
             for (int i = 1; i <= 5; i++) {
                 System.out.println("hello");
@@ -29,6 +31,8 @@ public class MultithreadingDemo {
             }
         });
         t2.start();
+
+//        System.out.println("Exit");
     }
 }
 
