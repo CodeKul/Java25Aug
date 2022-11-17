@@ -47,5 +47,6 @@ public class ArrayListDemo {
             add(5);
         }};
 
+
     }
 }
