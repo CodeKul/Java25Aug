@@ -8,7 +8,7 @@ public class StringDemo {
         String str1 = new String("Mumbai");
 
         String s = str.concat(str2);
-        System.out.println(s);
+        System.out.println(s.trim());
         System.out.println(s.toUpperCase());
         System.out.println(s.lastIndexOf("P"));
         System.out.println(s.indexOf("P"));
