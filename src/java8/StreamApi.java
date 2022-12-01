@@ -26,8 +26,10 @@ public class StreamApi {
 //        System.out.println(fun.apply(9));
 
         Function<String, Integer> str = (st) -> st.length();
-//        System.out.println(str.apply("welcome"));
 
+        Function<String,Integer> str2 = (s)-> s.length()*2;
+
+        System.out.println(str.andThen(Math::sqrt).apply("Welcome"));
 
         List<Integer> list = Arrays.asList(1,2,3,45,6);
 
